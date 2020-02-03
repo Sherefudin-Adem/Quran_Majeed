@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () =>{
         };
 
         $.getJSON('./json/surah/surah_' + chapter + '.json', (quran) =>{
-            $.getJSON('./json/translation/en/en_translation_' + chapter + '.json', (trans) => {
+            $.getJSON('./json/translation/oromo/or_translation_' + chapter + '.json', (trans) => {
 
                 $verse.show();
                 $count.show();
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () =>{
                     (function (chapter, verse) {
 
                         $.getJSON('./json/surah/surah_' + chapter + '.json', (quran) =>{
-                            $.getJSON('./json/translation/en/en_translation_' + chapter + '.json', (trans) =>{
+                            $.getJSON('./json/translation/oromo/or_translation_' + chapter + '.json', (trans) =>{
 
                                 $.each(trans.verse, (i, v) =>{
                                     let starIcon = './img/star.png';
