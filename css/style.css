@@ -1,0 +1,435 @@
+
+html,body {
+    height: 100%;
+    min-height: 100%;
+    font-size: 16px;
+    margin: 5px;
+    background: #333;
+   font-family: 'KFGQPC Uthman Taha Naskh', 'Courier New', Courier, monospace;
+}
+
+.result {
+    display: none;
+}
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    margin: 0;
+}
+    
+.bg-primary{
+    background-image: url(../img/quranbg.png) !important;
+    background-size: cover;
+
+}
+.bg-success{
+    background-image: url(../img/quranbg.png) !important;
+    background-size: cover;
+}
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    margin: 0px;
+}
+
+
+.alert.arabic {
+    font-family: me_quran;
+    font-size: 28px;
+    color:#505;
+    text-align: right;
+    margin: 0;
+}
+
+.alert.trans {
+    margin-top: 5px;
+    border:none !important;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    background-color: #b9cea5 !important;
+    border-color: #c3e6cb
+}
+.alert.alert-success {
+    color:#505;
+    background-color: #c3e6cb;
+    border-color: #c3e6cb;
+    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+    /* background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%); */
+}
+
+ul.info {
+    padding: 0;
+    display: none;
+}
+
+td {
+    border:none !important;
+    padding: 0;
+    margin:0;
+}
+
+.td_info {
+    vertical-align: top;
+    text-align: center !important;
+}
+
+ul.info li {
+    list-style: none;
+    display: inline;
+}
+
+#top {
+    font-size: 24px !important;
+    width:40px;
+    vertical-align: top;
+    text-align: center !important;
+    font-weight: bold;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.small {
+    padding: 2px 5px 2px 5px;
+}
+
+.star {
+    cursor: pointer;
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem
+}
+
+.card>hr {
+    margin-right: 0;
+    margin-left: 0
+}
+
+.card .text-white-50 {
+    color: rgba(255, 255, 255, .5) !important
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, .03);
+    border-bottom: 1px solid rgba(0, 0, 0, .125)
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem
+}
+
+.float-left {
+    float: left !important
+}
+
+.float-right {
+    float: right !important;
+    /* height: calc(1.5em + .75rem + 2px); */
+}
+
+.float-none {
+    float: none !important
+}
+.bg-primary {
+    background-color: #007bff !important
+}
+
+.bg-warning {
+    background-color: #ffc107 !important
+}
+
+.text-white {
+    color: #fff !important
+}
+
+.btn {
+    
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    width: 100px;
+    height: 50px !important;
+    
+}
+.btn-sm {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    
+}
+ .form-control:disabled{
+     background-color: #e9ecef;
+     opacity: 1;
+     margin: 0 50px 0 0;
+     display: block;
+     width: 100%;
+     height: calc(1.5em + .75rem + 2px);
+     padding: .375rem .75rem;
+     font-size: 1rem;
+     font-weight: 400;
+     line-height: 1.5;
+     color: #495057;
+     background-color: #fff;
+     background-clip: padding-box;
+     border: 1px solid #ced4da;
+     border-radius: .25rem;
+     transition: border-color .15s ease-in-out,
+     box-shadow .15s ease-in-out
+
+ }
+
+.form-control .small {
+    margin: 0 50px 0 0;
+    display: block;
+    width: 85%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+.form-control{
+    margin: 0 50px 0 0;
+    display: block;
+    width: 85%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+
+.form-group {
+    margin: 1rem
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important
+}
+
+.mx-auto {
+    margin-right: auto !important
+}
+.d-block {
+    display: block !important
+}
+
+
+/* badge style */
+
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+
+.btn .badge {
+    position: relative;
+    top: -1px
+}
+
+.badge-pill {
+    padding-right: .6em;
+    padding-left: .6em;
+    border-radius: 10rem
+}
+
+.badge-primary {
+    color: #fff;
+    background-color: #007bff
+}
+
+a.badge-primary:focus,
+a.badge-primary:hover {
+    color: #fff;
+    background-color: #0062cc
+}
+
+a.badge-primary.focus,
+a.badge-primary:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5)
+}
+
+.badge-secondary {
+    color: #fff;
+    background-color: #6c757d
+}
+
+a.badge-secondary:focus,
+a.badge-secondary:hover {
+    color: #fff;
+    background-color: #545b62
+}
+
+a.badge-secondary.focus,
+a.badge-secondary:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(108, 117, 125, .5)
+}
+
+.badge-success {
+    color: #fff;
+    background-color: #28a745
+}
+
+a.badge-success:focus,
+a.badge-success:hover {
+    color: #fff;
+    background-color: #1e7e34
+}
+
+a.badge-success.focus,
+a.badge-success:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(40, 167, 69, .5)
+}
+
+.badge-info {
+    color: #fff;
+    background-color: #17a2b8
+}
+
+a.badge-info:focus,
+a.badge-info:hover {
+    color: #fff;
+    background-color: #117a8b
+}
+
+a.badge-info.focus,
+a.badge-info:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(23, 162, 184, .5)
+}
+
+.badge-warning {
+    color: #212529;
+    background-color: #ffc107
+}
+
+a.badge-warning:focus,
+a.badge-warning:hover {
+    color: #212529;
+    background-color: #d39e00
+}
+
+a.badge-warning.focus,
+a.badge-warning:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(255, 193, 7, .5)
+}
+
+.badge-danger {
+    color: #fff;
+    background-color: #dc3545
+}
+
+a.badge-danger:focus,
+a.badge-danger:hover {
+    color: #fff;
+    background-color: #bd2130
+}
+
+a.badge-danger.focus,
+a.badge-danger:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .5)
+}
+
+.badge-light {
+    color: #212529;
+    background-color: #f8f9fa
+}
+
+a.badge-light:focus,
+a.badge-light:hover {
+    color: #212529;
+    background-color: #dae0e5
+}
+
+a.badge-light.focus,
+a.badge-light:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(248, 249, 250, .5)
+}
+
+.badge-dark {
+    color: #fff;
+    background-color: #343a40
+}
+
+a.badge-dark:focus,
+a.badge-dark:hover {
+    color: #fff;
+    background-color: #1d2124
+}
+
+a.badge-dark.focus,
+a.badge-dark:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(52, 58, 64, .5)
+}
